@@ -7,7 +7,7 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, './dist'),
-    publicPath: process.env.NODE_ENV === 'production' ? '/contact-webpack' : 'http://localhost:9004/'
+    publicPath: process.env.NODE_ENV === 'production' ? 'https://contact-webpack-hb1f7u9si-adrianoalbuquerques-projects.vercel.app/' : 'http://localhost:9004/'
   },
   devServer: {
     contentBase: path.resolve(__dirname, './dist'),
