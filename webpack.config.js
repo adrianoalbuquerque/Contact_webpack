@@ -7,6 +7,9 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, './dist'),
+    // publicPath: process.env.NODE_ENV === 'production'
+    //   ? 'http://contact-webpack.s3-website-sa-east-1.amazonaws.com/' // URL no S3
+    //   : 'http://localhost:9004/', // URL local
     publicPath: process.env.NODE_ENV === 'production' ? 'https://contact-webpack.vercel.app/' : 'http://localhost:9004/'
   },
   devServer: {
